@@ -1,0 +1,82 @@
+/* Table of Contents:
+
+1. General Styling
+2. Header
+3. Navigation/Ludicus zone
+
+*/
+
+/*  1. General Styling */
+
+:root {
+     --fs-main: clamp(1.2rem, 2vw, 1.46rem):
+}
+
+*, *::before, *::after {
+     box-sizing: border-box;
+}
+
+body {
+     margin: 0;
+     
+     background-image:      url('clouds.webp');
+     background-size:       cover;
+     background-repeat:      none;
+     background-attachment: fixed;
+     
+     word-wrap:       break-word;
+     font-size:   var(--fs-main);
+     text-shadow:  1px 1px black;
+}
+
+a {
+     text-decoration: none;
+     color:           blue;
+}
+
+a::hover {
+     color:  lime;
+}
+
+a::focus {
+     outline:  2px solid red;
+}
+
+.center {
+     text-align: center;
+}
+
+/*  2. Header */
+
+header { 
+     background-color:   cyan;
+     color:            yellow;
+     text-align:       center;
+     
+     padding-top:    0.1rem;
+     padding-bottom: 0.2rem;
+     padding-inline:   1rem;
+}
+
+header > * {
+     display:    inline-block;
+}
+
+@media (max-width: 420px) {
+     .header_subheading { 
+           display: none;
+      }
+}
+
+
+/*
+
+3. Navigation/Ludicus zone
+
+*/
+
+.nav_subheading { 
+      background-color: yellow;
+      color:              gray;
+ }
+}
